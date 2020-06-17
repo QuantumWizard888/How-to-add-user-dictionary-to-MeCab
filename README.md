@@ -1,7 +1,8 @@
 # How to add user dictionary to MeCab (WIP)
 
-MeCab text segmentation tool is irreplaceable when you need to analyze text written in Japanese language. But it has one flaw: there always a possibility that particular analyzed word won't be in MeCab dictionary. That's why we need to create our own custom dictionary to help MeCab to process new words. This guide was created in order to unravel the process of generating user dictionaries step by step. As for the OS which is used in this guide the author chose Ubuntu 18.04 LTS.
-Format of CSV user dictionary file (for each line):
+MeCab text segmentation tool is irreplaceable when you need to analyze text written in Japanese language. But it has one flaw: there is always possibility that particular analyzed word won't be in MeCab dictionary. That's why we need to create our own custom dictionary to help MeCab to process new words. This guide was created in order to unravel the process of generating user dictionaries step by step. As for the OS which is used in this guide the author chose Ubuntu 18.04 LTS.
+
+Let's start with the format of CSV user dictionary file (1 line for a word):
 ```
 表層形,,,コスト,品詞,品詞細分類1,*,*,*,*,
 ```
@@ -31,5 +32,6 @@ Consider this as a template for future use.
 
 ---
 ### References
+* MeCab: https://taku910.github.io/mecab/
 * http://hiroshiu.blogspot.com/2018/04/how-to-add-user-dictionary-to-mecab.html
 * https://towardsdatascience.com/mecab-usage-and-add-user-dictionary-to-mecab-9ee58966fc6
