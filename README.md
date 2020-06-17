@@ -21,6 +21,7 @@ And here is the parts of speech list:
 * 形容詞 - Adjective
 * 動詞 - Verb
 * 助動詞 - Auxiliary Verb
+* 
 * 助詞 - Particle
 * 記号 - Sign (Punctuation)
 
@@ -49,7 +50,23 @@ The file userdic.csv is located in the /home/cleo/userdic/ directory. Use *mecab
 ```
 /usr/lib/mecab/mecab-dict-index -d /usr/share/mecab/dic/ipadic/ -u /home/cleo/userdic/userdic.dic -f utf-i -t utf-8 "/home/cleo/userdic/userdic.csv"
 ```
+
 However to make MeCab actually see this dictionary we have to add it to mecabrc configuration file:
+
+```
+sudo nano /etc/mecabrc
+```
+
+And change this line:
+```
+; userdic = /home/foo/bar/user.dic
+```
+
+To this:
+```
+userdic = /home/cleo/userdic/userdic.dic
+```
+
 
 
 ---
