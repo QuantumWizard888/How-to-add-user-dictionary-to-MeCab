@@ -39,6 +39,19 @@ MeCab dictionaries catalogs location:
 MeCab dictionary generation tools location:
 * /usr/lib/mecab/
 
+Let's say we have user "cleo" on our system and we'd like to generate dictionary out of userdic.csv file with content:
+```
+牧瀬,,,1,名詞,一般,*,*,*,*,
+紅莉栖,,,1,名詞,一般,*,*,*,*,
+岡部,,,1,名詞,一般,*,*,*,*,
+```
+The file userdic.csv is located in the /home/cleo/userdic/ directory. Use *mecab-dict-index* command to create our dictionary:
+```
+/usr/lib/mecab/mecab-dict-index -d /usr/share/mecab/dic/ipadic/ -u /home/cleo/userdic/user.dic -f utf-i -t utf-8 "/home/cleo/userdic/userdic.csv"
+```
+However to make MeCab actually see this dictionary we have to add it to mecabrc configuration file:
+
+
 ---
 ### References
 * MeCab: https://taku910.github.io/mecab/
