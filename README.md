@@ -1,5 +1,6 @@
-# How to add user dictionary to MeCab
-As for the OS which is used in this guide the author chose Ubuntu 18.04 LTS.
+# How to add user dictionary to MeCab (WIP)
+
+MeCab text segmentation tool is irreplaceable when you need to analyze text written in Japanese language. But it has one flaw: there always a possibility that particular analyzed word won't be in MeCab dictionary. That's why we need to create our own custom dictionary to help MeCab to process new words. This guide was created in order to unravel the process of generating user dictionaries step by step. As for the OS which is used in this guide the author chose Ubuntu 18.04 LTS.
 Format of CSV user dictionary file (for each line):
 ```
 表層形,,,コスト,品詞,品詞細分類1,*,*,*,*,
@@ -12,7 +13,7 @@ Features list (number is index):
 * 4: 品詞 - Part of speech
 * 5: 品詞細分類1 - Subdivision (normally "一般" is used, which means "general")
 
-For the minimum it is required that each word (per line) contains features from 0 to 9 (included; and yes - asterisk symbol as a feature in range (6,9) also has to be included).
+For the minimum it is required that each word (per line) contains features from 0 to 9 (inclusive; and yes - asterisk symbol as a feature in range (6,9) also has to be included).
 
 And here is the parts of speech list:
 * 名詞 - Noun
