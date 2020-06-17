@@ -21,7 +21,6 @@ And here is the parts of speech list:
 * 形容詞 - Adjective
 * 動詞 - Verb
 * 助動詞 - Auxiliary Verb
-* 
 * 助詞 - Particle
 * 記号 - Sign (Punctuation)
 
@@ -29,7 +28,7 @@ For example this is how a typical line for the noun word will look like. Conside
 ```
 [WORD],,,1,名詞,一般,*,*,*,*,
 ```
-
+Here we have a list of paths with all files we need to make a dictionary. Note that this locations are valid for Ubuntu Linux 18.04 LTS and may vary from your Linux distribution.
 mecabrc file location:
 * /etc/mecabrc
 
@@ -66,11 +65,23 @@ To this:
 ```
 userdic = /home/cleo/userdic/userdic.dic
 ```
-
-
+For the last part we shall test our new dictionary:
+```
+cleo@machine:~$ echo 牧瀬 | mecab
+牧瀬	名詞,一般,*,*,*,*,
+EOS
+cleo@machine:~$ echo 紅莉栖 | mecab
+紅莉栖	名詞,一般,*,*,*,*,
+EOS
+cleo@machine:~$ echo 岡部 | mecab
+岡部	名詞,一般,*,*,*,*,
+EOS
+```
+Finally we created our custom dictionary which can be used, for example, in pair with CaboCha tool.
 
 ---
 ### References
 * MeCab: https://taku910.github.io/mecab/
+* CaboCha: https://taku910.github.io/cabocha/
 * http://hiroshiu.blogspot.com/2018/04/how-to-add-user-dictionary-to-mecab.html
 * https://towardsdatascience.com/mecab-usage-and-add-user-dictionary-to-mecab-9ee58966fc6
