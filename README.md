@@ -24,11 +24,10 @@ And here is the parts of speech list:
 * 助詞 - Particle
 * 記号 - Sign (Punctuation)
 
-For example this is how a typical line for the noun word will look like:
+For example this is how a typical line for the noun word will look like. Consider this as a template for future use:
 ```
 [WORD],,,1,名詞,一般,*,*,*,*,
 ```
-Consider this as a template for future use.
 
 mecabrc file location:
 * /etc/mecabrc
