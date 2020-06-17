@@ -49,6 +49,10 @@ The file userdic.csv is located in the /home/cleo/userdic/ directory. Use *mecab
 ```
 /usr/lib/mecab/mecab-dict-index -d /usr/share/mecab/dic/ipadic/ -u /home/cleo/userdic/userdic.dic -f utf-i -t utf-8 "/home/cleo/userdic/userdic.csv"
 ```
+If you'd like to just enter *mecab-dict-index* instead of a full path, just modify $PATH variable. Execute in console:
+```
+export PATH="/usr/lib/mecab/:$PATH"
+```
 
 However to make MeCab actually see this dictionary we have to add it to mecabrc configuration file:
 
