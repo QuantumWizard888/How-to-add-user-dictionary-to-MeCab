@@ -47,7 +47,7 @@ Let's say we have user "cleo" on our system and we'd like to generate dictionary
 ```
 The file userdic.csv is located in the /home/cleo/userdic/ directory. Use *mecab-dict-index* command to create our dictionary:
 ```
-/usr/lib/mecab/mecab-dict-index -d /usr/share/mecab/dic/ipadic/ -u /home/cleo/userdic/user.dic -f utf-i -t utf-8 "/home/cleo/userdic/userdic.csv"
+/usr/lib/mecab/mecab-dict-index -d /usr/share/mecab/dic/ipadic/ -u /home/cleo/userdic/userdic.dic -f utf-i -t utf-8 "/home/cleo/userdic/userdic.csv"
 ```
 However to make MeCab actually see this dictionary we have to add it to mecabrc configuration file:
 
