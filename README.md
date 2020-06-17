@@ -30,6 +30,14 @@ For example this is how a typical line for the noun word will look like:
 ```
 Consider this as a template for future use.
 
+mecabrc file location:
+* /etc/mecabrc
+MeCab dictionaries catalogs location:
+* /usr/share/mecab/dic/ipadic/
+* /usr/share/mecab/dic/juman/
+Mecab dictionary generation tools location:
+* /usr/lib/mecab/
+
 ---
 ### References
 * MeCab: https://taku910.github.io/mecab/
