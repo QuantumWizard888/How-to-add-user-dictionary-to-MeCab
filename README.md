@@ -81,7 +81,7 @@ cleo@machine:~$ echo 岡部 | mecab
 岡部	名詞,一般,*,*,*,*,
 EOS
 ```
-Finally we created our custom dictionary which can be used, for example, in pair with CaboCha tool.
+Finally we've created our custom dictionary which can be used, for example, in pair with CaboCha tool.
 
 ---
 ### References
