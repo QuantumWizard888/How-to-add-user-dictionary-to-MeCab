@@ -1,4 +1,4 @@
-# How to add user dictionary to MeCab (WIP)
+# How to add user dictionary to MeCab
 
 MeCab text segmentation tool is irreplaceable when you need to analyze text written in Japanese language. But it has one flaw: there is always possibility that particular analyzed word won't be in MeCab dictionary. That's why we need to create our own custom dictionary to help MeCab to process new words. This guide was created in order to unravel the process of generating user dictionaries step by step. As for the OS which is used in this guide the author chose Ubuntu 18.04 LTS.
 
