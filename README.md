@@ -39,7 +39,7 @@ MeCab dictionaries catalogs location:
 MeCab dictionary generation tools location:
 * /usr/lib/mecab/
 
-Let's say we have user "cleo" on our system and we'd like to generate dictionary out of userdic.csv file with content:
+Let's say we have user "cleo" in our system and we'd like to generate dictionary out of userdic.csv file with content:
 ```
 牧瀬,,,1,名詞,一般,*,*,*,*,
 紅莉栖,,,1,名詞,一般,*,*,*,*,
