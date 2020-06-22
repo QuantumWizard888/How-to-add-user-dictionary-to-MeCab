@@ -8,7 +8,7 @@ Let's start with the format of CSV user dictionary file (1 line for a word):
 ```
 As you can see, the line that represents each word consists of so called "features".
 
-Features list (number is index):
+Features list (number is index) includes:
 * 0: 表層形 - Surface type (the word itself)
 * 3: コスト - Cost (1 is recommended)
 * 4: 品詞 - Part of speech
