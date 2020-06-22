@@ -29,15 +29,16 @@ For example this is how a typical line for the noun word will look like. Conside
 [WORD],,,1,名詞,一般,*,*,*,*,
 ```
 Here we have a list of paths with all files we need to make a dictionary. Note that this locations are valid for Ubuntu Linux 18.04 LTS and may vary from your Linux distribution.
+
 mecabrc file location:
-* /etc/mecabrc
+* **/etc/mecabrc**
 
 MeCab dictionaries catalogs location:
-* /usr/share/mecab/dic/ipadic/
-* /usr/share/mecab/dic/juman/
+* **/usr/share/mecab/dic/ipadic/**
+* **/usr/share/mecab/dic/juman/**
 
 MeCab dictionary generation tools location:
-* /usr/lib/mecab/
+* **/usr/lib/mecab/**
 
 Let's say we have user "cleo" in our system and we'd like to generate dictionary out of userdic.csv file with content:
 ```
