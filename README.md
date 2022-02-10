@@ -55,7 +55,7 @@ If you'd like to just enter *mecab-dict-index* instead of a full path, just modi
 export PATH="/usr/lib/mecab/:$PATH"
 ```
 
-However to make MeCab actually see this dictionary we have to add it to mecabrc configuration file:
+However to make MeCab actually see this dictionary we have to add it to **mecabrc** configuration file:
 
 ```
 sudo nano /etc/mecabrc
