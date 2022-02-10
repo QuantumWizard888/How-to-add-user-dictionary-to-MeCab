@@ -30,7 +30,7 @@ For example this is how a typical line for the noun word will look like. Conside
 ```
 Here we have a list of paths with all files we need to make a dictionary. Note that this locations are valid for Ubuntu Linux 18.04 LTS and may vary from your Linux distribution.
 
-mecabrc file location:
+**mecabrc** file location:
 * **/etc/mecabrc**
 
 MeCab dictionaries catalogs location:
@@ -46,7 +46,7 @@ Let's say we have user "cleo" in our system and we'd like to generate dictionary
 紅莉栖,,,1,名詞,一般,*,*,*,*,
 岡部,,,1,名詞,一般,*,*,*,*,
 ```
-The file userdic.csv is located in the /home/cleo/userdic/ directory. Use *mecab-dict-index* command to create our dictionary:
+The file **userdic.csv** is located in the **/home/cleo/userdic/** directory. Use *mecab-dict-index* command to create our dictionary:
 ```
 /usr/lib/mecab/mecab-dict-index -d /usr/share/mecab/dic/ipadic/ -u /home/cleo/userdic/userdic.dic -f utf-i -t utf-8 "/home/cleo/userdic/userdic.csv"
 ```
